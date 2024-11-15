@@ -25,38 +25,18 @@ const Service = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0 pe-4">
-              <Link to="/" className="nav-item nav-link active">
+              <Link to="/" className="nav-item nav-link ">
                 Home
               </Link>
               <Link to="/About" className="nav-item nav-link">
                 About
               </Link>
-              <Link to="/service" className="nav-item nav-link">
+              <Link to="/service" className="nav-item nav-link active">
                 Service
               </Link>
               <Link to="/menu" className="nav-item nav-link">
                 Menu
               </Link>
-              <div className="nav-item dropdown">
-                <a
-                  href="#"
-                  className="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
-                  Pages
-                </a>
-                <div className="dropdown-menu m-0">
-                  <Link to="/booking" className="dropdown-item">
-                    Booking
-                  </Link>
-                  <Link to="/team" className="dropdown-item">
-                    Our Team
-                  </Link>
-                  <Link to="/testimonial" className="dropdown-item">
-                    Testimonial
-                  </Link>
-                </div>
-              </div>
               <Link to="/contact" className="nav-item nav-link">
                 Contact
               </Link>

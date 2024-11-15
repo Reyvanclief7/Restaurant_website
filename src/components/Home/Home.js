@@ -38,26 +38,6 @@ function Home() {
               <Link to="/menu" className="nav-item nav-link">
                 Menu
               </Link>
-              <div className="nav-item dropdown">
-                <a
-                  href="#"
-                  className="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
-                  Pages
-                </a>
-                <div className="dropdown-menu m-0">
-                  <Link to="/booking" className="dropdown-item">
-                    Booking
-                  </Link>
-                  <Link to="/team" className="dropdown-item">
-                    Our Team
-                  </Link>
-                  <Link to="/testimonial" className="dropdown-item">
-                    Testimonial
-                  </Link>
-                </div>
-              </div>
               <Link to="/contact" className="nav-item nav-link">
                 Contact
               </Link>
@@ -1246,6 +1226,7 @@ function Home() {
         <i className="bi bi-arrow-up" />
       </a>
     </div>
+    
   );
 }
 
