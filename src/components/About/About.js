@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <div className="container-xxl bg-white p-0">
@@ -21,18 +24,18 @@ const About = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0 pe-4">
-              <a href="index.html" className="nav-item nav-link">
+              <Link to="/" className="nav-item nav-link">
                 Home
-              </a>
-              <a href="about.html" className="nav-item nav-link active">
+              </Link>
+              <Link to="/About" className="nav-item nav-link active">
                 About
-              </a>
-              <a href="service.html" className="nav-item nav-link">
+              </Link>
+              <Link to="/service" className="nav-item nav-link">
                 Service
-              </a>
-              <a href="menu.html" className="nav-item nav-link">
+              </Link>
+              <Link to="/menu" className="nav-item nav-link">
                 Menu
-              </a>
+              </Link>
               <div className="nav-item dropdown">
                 <a
                   href="#"
@@ -42,20 +45,20 @@ const About = () => {
                   Pages
                 </a>
                 <div className="dropdown-menu m-0">
-                  <a href="booking.html" className="dropdown-item">
+                  <Link to="/booking" className="dropdown-item">
                     Booking
-                  </a>
-                  <a href="team.html" className="dropdown-item">
+                  </Link>
+                  <Link to="/team" className="dropdown-item">
                     Our Team
-                  </a>
-                  <a href="testimonial.html" className="dropdown-item">
+                  </Link>
+                  <Link to="/testimonial" className="dropdown-item">
                     Testimonial
-                  </a>
+                  </Link>
                 </div>
               </div>
-              <a href="contact.html" className="nav-item nav-link">
+              <Link to="/contact" className="nav-item nav-link">
                 Contact
-              </a>
+              </Link>
             </div>
             <a href className="btn btn-primary py-2 px-4">
               Book A Table
