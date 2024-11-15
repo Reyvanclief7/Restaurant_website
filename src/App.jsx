@@ -4,6 +4,7 @@ import Home from "./components/Home/Home"; // Mengimpor Home dari folder compone
 import About from "./components/About/About"; // Mengimpor About dari folder components
 import Service from "./components/Service/Service";
 import Menu from "./components/Menu/Menu";  
+import Contact from "./components/Contact/Contact";  
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route exact path="/About" element={<Service />} />
       <Route exact path="/About" element={<About />} />
       <Route exact path="/About" element={<Menu />} />
+      <Route exact path="/About" element={<Contact />} />
       </Routes>
     </Router>
   );
