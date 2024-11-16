@@ -20,7 +20,7 @@ const Menu = () => {
           <a href className="navbar-brand p-0">
             <h1 className="text-primary m-0">
               <i className="fa fa-utensils me-3" />
-              Restoran
+              Restoran test
             </h1>
             {/* <img src="img/logo.png" alt="Logo"> */}
           </a>
