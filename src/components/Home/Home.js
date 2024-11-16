@@ -22,7 +22,7 @@ function Home() {
           <Link to="/" className="navbar-brand p-0">
             <h1 className="text-primary m-0">
               <i className="fa fa-utensils me-3" />
-              {}
+              {home.title}
             </h1>
             {/* Optional Logo Image */}
             {/* <img src="img/logo.png" alt="Logo" /> */}

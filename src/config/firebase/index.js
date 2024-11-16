@@ -13,7 +13,8 @@ const firebaseConfig = {
   storageBucket: "restaurant-booking-web.firebasestorage.app",
   messagingSenderId: "175373677619",
   appId: "1:175373677619:web:ede6619e4492f240955f46",
-  measurementId: "G-CCD3PRD9NM"
+  databaseURL: "https://restaurant-booking-web-default-rtdb.firebaseio.com",
+  measurementId: "G-CCD3PRD9NM",
 };
 
 // Initialize Firebase
