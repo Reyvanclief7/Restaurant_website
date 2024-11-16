@@ -1,7 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
 
 const Menu = () => {
+
+  const [menu, setMenu] = useState([]);
+  useEffect(() => {
+    const db = getDatabase();
+    const MenuRef = ref(db, "menu");
+    onValue(MenuRef, (snapshot) => {
+      const data = snapshot.val();
+      setMenu(data);
+    });
+  }, []);
   return (
     <div>
       <div className="container-xxl position-relative p-0">

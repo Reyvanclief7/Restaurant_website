@@ -5,6 +5,8 @@ import "./assets/css/style.css";
 import "./assets/css/bootstrap.min.css";
 import App from "./App.jsx";
 import reportWebVitals from "./reportWebVitals";
+import "./config/firebase";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
