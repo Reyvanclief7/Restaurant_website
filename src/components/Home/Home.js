@@ -7,8 +7,8 @@ function Home() {
   const [home, setHome] = useState([]);
   useEffect(() => {
     const db = getDatabase();
-    const HomeRef = ref(db, "home");
-    onValue(HomeRef, (snapshot) => {
+    const homeRef = ref(db, "home");
+    onValue(homeRef, (snapshot) => {
       const data = snapshot.val();
       setHome(data);
     });
@@ -22,7 +22,7 @@ function Home() {
           <Link to="/" className="navbar-brand p-0">
             <h1 className="text-primary m-0">
               <i className="fa fa-utensils me-3" />
-              Restoran
+              {}
             </h1>
             {/* Optional Logo Image */}
             {/* <img src="img/logo.png" alt="Logo" /> */}
