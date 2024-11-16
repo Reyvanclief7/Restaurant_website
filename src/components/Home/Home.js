@@ -1,7 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
 
 function Home() {
+  const [home, setHome] = useState([]);
+  useEffect(() => {
+    const db = getDatabase();
+    const HomeRef = ref(db, "home");
+    onValue(HomeRef, (snapshot) => {
+      const data = snapshot.val();
+      setHome(data);
+    });
+  }, []);
   return (
     <div className="container-xxl bg-white p-0">
       {/* Navbar & Hero Start */}
