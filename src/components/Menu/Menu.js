@@ -4,7 +4,6 @@ import { getDatabase, ref, onValue } from "firebase/database";
 import { useEffect, useState } from "react";
 
 const Menu = () => {
-
   const [menu, setMenu] = useState([]);
   useEffect(() => {
     const db = getDatabase();
@@ -35,7 +34,7 @@ const Menu = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0 pe-4">
-            <Link to="/" className="nav-item nav-link">
+              <Link to="/" className="nav-item nav-link">
                 Home
               </Link>
               <Link to="/About" className="nav-item nav-link">
