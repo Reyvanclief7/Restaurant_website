@@ -22,7 +22,7 @@ const Service = () => {
               <div className="service-item rounded pt-3">
                 <div className="p-4">
                   <i className="fa fa-3x fa-user-tie text-primary mb-4" />
-                  <h5>Master Chefs</h5>
+                  <h5>{service.title}</h5>
                   <p>
                     Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
                     amet diam
