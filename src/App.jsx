@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
-import Home from "./components/Home/Home"; // Mengimpor Home dari folder components
-import About from "./components/About/About"; // Mengimpor About dari folder components
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
 import Service from "./components/Service/Service";
 import Menu from "./components/Menu/Menu";  
 import Contact from "./components/Contact/Contact";  

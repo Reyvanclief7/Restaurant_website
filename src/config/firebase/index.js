@@ -7,14 +7,15 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDZf4UVW1Sir90Uus6XAxexa1V9t6j0_6k",
-  authDomain: "restaurant-booking-web.firebaseapp.com",
-  projectId: "restaurant-booking-web",
-  storageBucket: "restaurant-booking-web.firebasestorage.app",
-  messagingSenderId: "175373677619",
-  appId: "1:175373677619:web:ede6619e4492f240955f46",
-  databaseURL: "https://restaurant-booking-web-default-rtdb.firebaseio.com",
-  measurementId: "G-CCD3PRD9NM",
+  apiKey: "AIzaSyBBId1sohMS04OzGf0gxEZ6yW-yKkXEOK4",
+  authDomain: "website-restaurant-59720.firebaseapp.com",
+  projectId: "website-restaurant-59720",
+  storageBucket: "website-restaurant-59720.firebasestorage.app",
+  databaseURL:
+    "https://website-restaurant-59720-default-rtdb.asia-southeast1.firebasedatabase.app",
+  messagingSenderId: "993398823908",
+  appId: "1:993398823908:web:e479b7c4d23438b4bd05f1",
+  measurementId: "G-G4B15T9FMX",
 };
 
 // Initialize Firebase

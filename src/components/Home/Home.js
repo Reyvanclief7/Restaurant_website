@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { getDatabase, ref, onValue } from "firebase/database";
 import { useEffect, useState } from "react";
+// import ScriptIntegration from "../ScriptIntegration";
 
 function Home() {
   const [home, setHome] = useState([]);
   useEffect(() => {
     const db = getDatabase();
-    const homeRef = ref(db, "home");
-    onValue(homeRef, (snapshot) => {
+    const HomeRef = ref(db, "home");
+    onValue(HomeRef, (snapshot) => {
       const data = snapshot.val();
       setHome(data);
     });
@@ -16,6 +17,7 @@ function Home() {
   return (
     <div className="container-xxl bg-white p-0">
       {/* Navbar & Hero Start */}
+      {/* <ScriptIntegration /> */}
       <div className="container-xxl position-relative p-0">
         {/* Navbar */}
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
@@ -38,23 +40,23 @@ function Home() {
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0 pe-4">
               <Link to="/" className="nav-item nav-link active">
-                Home
+                {/* {home.nav.beranda} */}
               </Link>
               <Link to="/About" className="nav-item nav-link">
-                About
+                {/* {home.nav.about} */}
               </Link>
               <Link to="/service" className="nav-item nav-link">
-                Service
+                {/* {home.nav.service} */}
               </Link>
               <Link to="/menu" className="nav-item nav-link">
-                Menu
+                {/* {home.nav.menu} */}
               </Link>
               <Link to="/contact" className="nav-item nav-link">
-                Contact
+                {/* {home.nav.contact} */}
               </Link>
             </div>
             <Link to="/book-table" className="btn btn-primary py-2 px-4">
-              Book A Table
+              {/* {home.nav.booking} */}
             </Link>
           </div>
         </nav>
@@ -1237,7 +1239,6 @@ function Home() {
         <i className="bi bi-arrow-up" />
       </a>
     </div>
-    
   );
 }
 
