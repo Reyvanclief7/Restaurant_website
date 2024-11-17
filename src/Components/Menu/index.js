@@ -1,12 +1,24 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 const Menu = () => {
+  const [menu, setMenu] = useState([]);
+  useEffect(() => {
+    const db = getDatabase();
+    const menuRef = ref(db, "menu");
+    onValue(menuRef, (snapshot) => {
+      const data = snapshot.val();
+      setMenu(data);
+    });
+  }, []);
     return (
         <div className="container-xxl py-5">
         <div className="container">
           <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h5 className="section-title ff-secondary text-center text-primary fw-normal">
-              Food Menu
+              {menu.tile}
             </h5>
-            <h1 className="mb-5">Most Popular Items</h1>
+            <h1 className="mb-5">{menu.teks1}</h1>
           </div>
           <div
             className="tab-class text-center wow fadeInUp"
@@ -21,8 +33,8 @@ const Menu = () => {
                 >
                   <i className="fa fa-coffee fa-2x text-primary" />
                   <div className="ps-3">
-                    <small className="text-body">Popular</small>
-                    <h6 className="mt-n1 mb-0">Breakfast</h6>
+                    <small className="text-body">{menu.teks2}</small>
+                    <h6 className="mt-n1 mb-0">{menu.teks3}</h6>
                   </div>
                 </a>
               </li>
@@ -34,8 +46,8 @@ const Menu = () => {
                 >
                   <i className="fa fa-hamburger fa-2x text-primary" />
                   <div className="ps-3">
-                    <small className="text-body">Special</small>
-                    <h6 className="mt-n1 mb-0">Launch</h6>
+                    <small className="text-body">{menu.teks4}</small>
+                    <h6 className="mt-n1 mb-0">{menu.teks5}</h6>
                   </div>
                 </a>
               </li>
@@ -47,8 +59,8 @@ const Menu = () => {
                 >
                   <i className="fa fa-utensils fa-2x text-primary" />
                   <div className="ps-3">
-                    <small className="text-body">Lovely</small>
-                    <h6 className="mt-n1 mb-0">Dinner</h6>
+                    <small className="text-body">{menu.teks6}</small>
+                    <h6 className="mt-n1 mb-0">{menu.teks7}</h6>
                   </div>
                 </a>
               </li>
@@ -66,11 +78,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -85,11 +97,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -104,11 +116,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -123,11 +135,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -142,11 +154,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -161,11 +173,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -180,11 +192,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -199,11 +211,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -222,11 +234,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -241,11 +253,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -260,11 +272,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -279,11 +291,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -298,11 +310,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -317,11 +329,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -336,11 +348,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -355,11 +367,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -378,11 +390,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -397,11 +409,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -416,11 +428,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -435,11 +447,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -454,11 +466,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -473,11 +485,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -492,11 +504,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
@@ -511,11 +523,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>Chicken Burger</span>
-                          <span className="text-primary">$115</span>
+                          <span>{menu.teks8}</span>
+                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          Ipsum ipsum clita erat amet dolor justo diam
+                          {menu.teks10}
                         </small>
                       </div>
                     </div>
