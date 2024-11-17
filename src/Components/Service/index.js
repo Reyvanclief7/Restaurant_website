@@ -9,8 +9,8 @@ const Service = () => {
     onValue(serviceRef, (snapshot) => {
       const data = snapshot.val();
       setService(data);
-    });
-  }, []);
+  });
+  }, []);
     return (
         <div className="container-xxl py-5">
         <div className="container">
@@ -24,8 +24,7 @@ const Service = () => {
                   <i className="fa fa-3x fa-user-tie text-primary mb-4" />
                   <h5>{service.title}</h5>
                   <p>
-                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                    amet diam
+                    {service.ket}
                   </p>
                 </div>
               </div>
@@ -37,10 +36,9 @@ const Service = () => {
               <div className="service-item rounded pt-3">
                 <div className="p-4">
                   <i className="fa fa-3x fa-utensils text-primary mb-4" />
-                  <h5>Quality Food</h5>
+                  <h5>{service.title2}</h5>
                   <p>
-                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                    amet diam
+                    {service.ket2}
                   </p>
                 </div>
               </div>
@@ -52,10 +50,9 @@ const Service = () => {
               <div className="service-item rounded pt-3">
                 <div className="p-4">
                   <i className="fa fa-3x fa-cart-plus text-primary mb-4" />
-                  <h5>Online Order</h5>
+                  <h5>{service.title3}</h5>
                   <p>
-                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                    amet diam
+                    {service.ket3}
                   </p>
                 </div>
               </div>
@@ -67,10 +64,9 @@ const Service = () => {
               <div className="service-item rounded pt-3">
                 <div className="p-4">
                   <i className="fa fa-3x fa-headset text-primary mb-4" />
-                  <h5>24/7 Service</h5>
+                  <h5>{service.title4}</h5>
                   <p>
-                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
-                    amet diam
+                    {service.ket4}
                   </p>
                 </div>
               </div>

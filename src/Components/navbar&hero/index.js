@@ -9,8 +9,8 @@ const NavHero = () => {
     onValue(navHeroRef, (snapshot) => {
       const data = snapshot.val();
       setNavHero(data);
-    });
-  }, []);
+   });
+  }, []);
     return (
         <div className="container-xxl position-relative p-0">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
