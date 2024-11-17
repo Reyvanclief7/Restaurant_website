@@ -29,7 +29,7 @@ const Team = () => {
                 <div className="rounded-circle overflow-hidden m-4">
                   <img className="img-fluid" src="img/team-1.jpg" alt />
                 </div>
-                <h5 className="mb-0">Full Name</h5>
+                <h5 className="mb-0">Natasha Kountur</h5>
                 <small>Designation</small>
                 <div className="d-flex justify-content-center mt-3">
                   <a className="btn btn-square btn-primary mx-1" href>
@@ -52,7 +52,7 @@ const Team = () => {
                 <div className="rounded-circle overflow-hidden m-4">
                   <img className="img-fluid" src="img/team-2.jpg" alt />
                 </div>
-                <h5 className="mb-0">Full Name</h5>
+                <h5 className="mb-0">Angelika Manoppo</h5>
                 <small>Designation</small>
                 <div className="d-flex justify-content-center mt-3">
                   <a className="btn btn-square btn-primary mx-1" href>
@@ -75,7 +75,7 @@ const Team = () => {
                 <div className="rounded-circle overflow-hidden m-4">
                   <img className="img-fluid" src="img/team-3.jpg" alt />
                 </div>
-                <h5 className="mb-0">Full Name</h5>
+                <h5 className="mb-0">Hiskia Siregar</h5>
                 <small>Designation</small>
                 <div className="d-flex justify-content-center mt-3">
                   <a className="btn btn-square btn-primary mx-1" href>
@@ -98,7 +98,7 @@ const Team = () => {
                 <div className="rounded-circle overflow-hidden m-4">
                   <img className="img-fluid" src="img/team-4.jpg" alt />
                 </div>
-                <h5 className="mb-0">Full Name</h5>
+                <h5 className="mb-0">Vanesa Mamangkey</h5>
                 <small>Designation</small>
                 <div className="d-flex justify-content-center mt-3">
                   <a className="btn btn-square btn-primary mx-1" href>
