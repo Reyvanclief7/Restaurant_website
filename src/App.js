@@ -1,6 +1,8 @@
 import About from "./Components/About";
 import Menu from "./Components/Menu";
 import NavHero from "./Components/navbar&hero";
+import Reservation1 from "./Components/Reservation1";
+import Reservation2 from "./Components/Reservation2";
 import Service from "./Components/Service";
 
 const App = () => {
