@@ -1,12 +1,24 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 const Team = () => {
+  const [team, setTeam] = useState([]);
+  useEffect(() => {
+    const db = getDatabase();
+    const teamRef = ref(db, "team");
+    onValue(teamRef, (snapshot) => {
+      const data = snapshot.val();
+      setTeam(data);
+  });
+  }, []);
     return (
         <div className="container-xxl pt-5 pb-3">
         <div className="container">
           <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h5 className="section-title ff-secondary text-center text-primary fw-normal">
-              Team Members
+              {team.tim}
             </h5>
-            <h1 className="mb-5">Our Master Chefs</h1>
+            <h1 className="mb-5">{team.mmber}</h1>
           </div>
           <div className="row g-4">
             <div
@@ -107,4 +119,4 @@ const Team = () => {
     )
 }
 
-export default Team
+export default Team;
