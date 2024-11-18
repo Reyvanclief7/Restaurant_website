@@ -80,9 +80,9 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6">
               <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
-                Newsletter
+                {footer.berita}
               </h4>
-              <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+              <p>{footer.kta2}</p>
               <div
                 className="position-relative mx-auto"
                 style={{ maxWidth: 400 }}
@@ -108,21 +108,21 @@ const Footer = () => {
               <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
                 ©{" "}
                 <a className="border-bottom" href="#">
-                  Your Site Name
+                  {footer.sitenme}
                 </a>
-                , All Right Reserved.
+                , {footer.kta}
                 {/*/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. *** /*/}
-                Designed By{" "}
+                {/* Designed By{" "}
                 <a className="border-bottom" href="https://htmlcodex.com">
                   HTML Codex
-                </a>
+                </a> */}
               </div>
               <div className="col-md-6 text-center text-md-end">
                 <div className="footer-menu">
-                  <a href>Home</a>
-                  <a href>Cookies</a>
-                  <a href>Help</a>
-                  <a href>FQAs</a>
+                  <a href>{footer.hfhome}</a>
+                  <a href>{footer.hfcook}</a>
+                  <a href>{footer.hfhelp}</a>
+                  <a href>{footer.hffq}</a>
                 </div>
               </div>
             </div>
