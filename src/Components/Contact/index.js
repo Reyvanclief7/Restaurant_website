@@ -77,7 +77,7 @@ const Contact = () => {
                           id="name"
                           placeholder="Your Name"
                         />
-                        <label htmlFor="name">Your Name</label>
+                        <label htmlFor="name">{contact.name}</label>
                       </div>
                     </div>
                     <div className="col-md-6">
@@ -88,7 +88,7 @@ const Contact = () => {
                           id="email"
                           placeholder="Your Email"
                         />
-                        <label htmlFor="email">Your Email</label>
+                        <label htmlFor="email">{contact.yemail}</label>
                       </div>
                     </div>
                     <div className="col-12">
@@ -99,7 +99,7 @@ const Contact = () => {
                           id="subject"
                           placeholder="Subject"
                         />
-                        <label htmlFor="subject">Subject</label>
+                        <label htmlFor="subject">{contact.subject}</label>
                       </div>
                     </div>
                     <div className="col-12">
@@ -111,7 +111,7 @@ const Contact = () => {
                           style={{ height: 150 }}
                           defaultValue={""}
                         />
-                        <label htmlFor="message">Message</label>
+                        <label htmlFor="message">{contact.pesan}</label>
                       </div>
                     </div>
                     <div className="col-12">
@@ -119,7 +119,7 @@ const Contact = () => {
                         className="btn btn-primary w-100 py-3"
                         type="submit"
                       >
-                        Send Message
+                        {contact.send}
                       </button>
                     </div>
                   </div>
