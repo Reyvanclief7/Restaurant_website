@@ -58,8 +58,6 @@ const NavHero = () => {
             <div className="col-lg-6 text-center text-lg-start">
               <h1 className="display-3 text-white animated slideInLeft">
                 {navHero.text1}
-                <br />
-                {navHero.text2}
               </h1>
               <p className="text-white animated slideInLeft mb-4 pb-2">
                 {navHero.text3}
