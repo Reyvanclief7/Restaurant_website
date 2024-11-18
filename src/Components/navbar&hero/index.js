@@ -72,7 +72,7 @@ const NavHero = () => {
               </a>
             </div>
             <div className="col-lg-6 text-center text-lg-end overflow-hidden">
-              <img className="img-fluid" src="img/hero.png" alt />
+              <img className="img-fluid" src={data:image/jpeg;base64, ${navhero.gambar}} alt />
             </div>
           </div>
         </div>

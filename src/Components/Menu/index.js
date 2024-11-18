@@ -78,11 +78,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
+                          <span>{menu.menu1}</span>
+                          <span className="text-primary">{menu.harga1}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/* isi */}
                         </small>
                       </div>
                     </div>
@@ -97,11 +97,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
+                          <span>{menu.menu2}</span>
+                          <span className="text-primary">{menu.harga2}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -116,11 +116,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
+                          <span>{menu.menu3}</span>
+                          <span className="text-primary">{menu.harga3}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -135,11 +135,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
+                          <span>{menu.menu4}</span>
+                          <span className="text-primary">{menu.harga4}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -154,11 +154,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
+                          <span>{menu.menu5}</span>
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -173,11 +173,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
+                          <span>{menu.menu6}</span>
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -192,11 +192,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
+                          <span>{menu.menu7}</span>
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -211,11 +211,11 @@ const Menu = () => {
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
+                          <span>{menu.menu8}</span>
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -238,7 +238,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -257,7 +257,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -276,7 +276,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -295,7 +295,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -314,7 +314,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -333,7 +333,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -352,7 +352,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -371,7 +371,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -394,7 +394,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -413,7 +413,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -432,7 +432,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -451,7 +451,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -470,7 +470,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -489,7 +489,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -508,7 +508,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
@@ -527,7 +527,7 @@ const Menu = () => {
                           <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
-                          {menu.teks10}
+                          {/*isi*/}
                         </small>
                       </div>
                     </div>
