@@ -12,7 +12,7 @@ const Service = () => {
   });
   }, []);
     return (
-        <div className="container-xxl py-5">
+      <div id="service" className="container-xxl py-5">
         <div className="container">
           <div className="row g-4">
             <div

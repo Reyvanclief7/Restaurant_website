@@ -1,4 +1,5 @@
 import About from "./Components/About";
+import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Menu from "./Components/Menu";
 import NavHero from "./Components/navbar&hero";
@@ -13,16 +14,16 @@ const App = () => {
        <NavHero />
       {/* Navbar & Hero End */}
       {/* Service Start */}
-       <Service />
+       <About />
       {/* Service End */}
       {/* About Start */}
-       <About />
+       <Service />
       {/* About End */}
       {/* Menu Start */}
        <Menu />
       {/* Menu End */}
       {/* Reservation Start */}
-      <div
+      <div id="booking"
         className="container-xxl py-5 px-0 wow fadeInUp"
         data-wow-delay="0.1s"
       >
@@ -164,7 +165,8 @@ const App = () => {
        <Team />
       {/* Team End */}
       {/* Testimonial Start */}
-       <Testimonial />
+      <Testimonial />
+      <Contact />
       {/* Testimonial End */}
       {/* Footer Start */}
        <Footer />

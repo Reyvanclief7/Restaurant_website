@@ -37,17 +37,17 @@ const NavHero = () => {
             <a href="#about" className="nav-item nav-link">
               {navHero.about}
             </a>
-            <a href="service.html" className="nav-item nav-link">
+            <a href="#service" className="nav-item nav-link">
               {navHero.service}
             </a>
-            <a href="menu.html" className="nav-item nav-link">
+            <a href="#menu" className="nav-item nav-link">
               {navHero.menu}
             </a>
-            <a href="contact.html" className="nav-item nav-link">
+            <a href="#kontak" className="nav-item nav-link">
               {navHero.contact}
             </a>
           </div>
-          <a href className="btn btn-primary py-2 px-4">
+          <a  href="#booking" className="btn btn-primary py-2 px-4">
             {navHero.booking}
           </a>
         </div>
