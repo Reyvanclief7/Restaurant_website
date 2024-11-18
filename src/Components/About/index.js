@@ -21,29 +21,30 @@ const About = () => {
                   <img
                     className="img-fluid rounded w-100 wow zoomIn"
                     data-wow-delay="0.1s"
-                    src="img/about-1.jpg"
+                    src={`data:image/jpeg;base64,${about.image1}`}
+                    alt="."
                   />
                 </div>
                 <div className="col-6 text-start">
-                  <img
+                  <img alt="."
                     className="img-fluid rounded w-75 wow zoomIn"
                     data-wow-delay="0.3s"
-                    src="img/about-2.jpg"
+                    src={`data:image/jpeg;base64,${about.imege2}`}
                     style={{ marginTop: "25%" }}
                   />
                 </div>
                 <div className="col-6 text-end">
-                  <img
+                  <img alt="."
                     className="img-fluid rounded w-75 wow zoomIn"
                     data-wow-delay="0.5s"
-                    src="img/about-3.jpg"
+                    src={`data:image/jpeg;base64,${about.image3}`}
                   />
                 </div>
                 <div className="col-6 text-end">
-                  <img
+                  <img alt=""
                     className="img-fluid rounded w-100 wow zoomIn"
                     data-wow-delay="0.7s"
-                    src="img/about-4.jpg"
+                    src={`data:image/jpeg;base64,${about.image4}`}
                   />
                 </div>
               </div>
