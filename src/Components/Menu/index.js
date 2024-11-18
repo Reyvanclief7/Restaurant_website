@@ -1,5 +1,5 @@
 import { getDatabase, ref, onValue } from "firebase/database";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Menu = () => {
   const [menu, setMenu] = useState([]);
@@ -9,8 +9,8 @@ const Menu = () => {
     onValue(menuRef, (snapshot) => {
       const data = snapshot.val();
       setMenu(data);
-    });
-  }, []);
+  });
+  }, []);
     return (
         <div className="container-xxl py-5">
         <div className="container">
