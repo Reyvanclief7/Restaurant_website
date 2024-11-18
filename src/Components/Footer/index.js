@@ -1,6 +1,16 @@
-
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
+  const [footer, setFooter] = useState([]);
+  useEffect(() => {
+    const db = getDatabase();
+    const footerRef = ref(db, "footer");
+    onValue(footerRef, (snapshot) => {
+      const data = snapshot.val();
+      setFooter(data);
+  });
+  }, []);
     return (
         <div
         className="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
@@ -10,39 +20,39 @@ const Footer = () => {
           <div className="row g-5">
             <div className="col-lg-3 col-md-6">
               <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
-                Company
+                {footer.comp}
               </h4>
               <a className="btn btn-link" href>
-                About Us
+                {footer.abt}
               </a>
               <a className="btn btn-link" href>
-                Contact Us
+                {footer.kontak}
               </a>
               <a className="btn btn-link" href>
-                Reservation
+                {footer.reser}
               </a>
               <a className="btn btn-link" href>
-                Privacy Policy
+                {footer.priv}
               </a>
               <a className="btn btn-link" href>
-                Terms &amp; Condition
+                {footer.tnc}
               </a>
             </div>
             <div className="col-lg-3 col-md-6">
               <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
-                Contact
+                {footer.kontak}
               </h4>
               <p className="mb-2">
                 <i className="fa fa-map-marker-alt me-3" />
-                123 Street, New York, USA
+                {footer.almt}
               </p>
               <p className="mb-2">
                 <i className="fa fa-phone-alt me-3" />
-                +012 345 67890
+                {footer.notelp}
               </p>
               <p className="mb-2">
                 <i className="fa fa-envelope me-3" />
-                info@example.com
+                {footer.email}
               </p>
               <div className="d-flex pt-2">
                 <a className="btn btn-outline-light btn-social" href>
@@ -61,12 +71,12 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6">
               <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">
-                Opening
+                {footer.opng}
               </h4>
-              <h5 className="text-light fw-normal">Monday - Saturday</h5>
-              <p>09AM - 09PM</p>
-              <h5 className="text-light fw-normal">Sunday</h5>
-              <p>10AM - 08PM</p>
+              <h5 className="text-light fw-normal">{footer.hri}</h5>
+              <p>{footer.jam}</p>
+              <h5 className="text-light fw-normal">{footer.sunday}</h5>
+              <p>{footer.jmggu}</p>
             </div>
             <div className="col-lg-3 col-md-6">
               <h4 className="section-title ff-secondary text-start text-primary fw-normal mb-4">

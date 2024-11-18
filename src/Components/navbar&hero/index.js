@@ -34,7 +34,7 @@ const NavHero = () => {
             <a href="index.html" className="nav-item nav-link active">
               {navHero.home}
             </a>
-            <a href="about.html" className="nav-item nav-link">
+            <a href="#about" className="nav-item nav-link">
               {navHero.about}
             </a>
             <a href="service.html" className="nav-item nav-link">

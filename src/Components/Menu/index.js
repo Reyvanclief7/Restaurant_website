@@ -38,32 +38,6 @@ const Menu = () => {
                   </div> */}
                 </a>
               </li>
-              <li className="nav-item">
-                <a
-                  className="d-flex align-items-center text-start mx-3 pb-3"
-                  data-bs-toggle="pill"
-                  href="#tab-2"
-                >
-                  <i className="fa fa-hamburger fa-2x text-primary" />
-                  {/* <div className="ps-3">
-                    <small className="text-body">{menu.teks4}</small>
-                    <h6 className="mt-n1 mb-0">{menu.teks5}</h6>
-                  </div> */}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="d-flex align-items-center text-start mx-3 me-0 pb-3"
-                  data-bs-toggle="pill"
-                  href="#tab-3"
-                >
-                  <i className="fa fa-utensils fa-2x text-primary" />
-                  {/* <div className="ps-3">
-                    <small className="text-body">{menu.teks6}</small>
-                    <h6 className="mt-n1 mb-0">{menu.teks7}</h6>
-                  </div> */}
-                </a>
-              </li>
             </ul>
             <div className="tab-content">
               <div id="tab-1" className="tab-pane fade show p-0 active">
