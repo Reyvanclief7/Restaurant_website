@@ -16,7 +16,7 @@ const Menu = () => {
         <div className="container">
           <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h5 className="section-title ff-secondary text-center text-primary fw-normal">
-              {menu.tile}
+              {menu.title}
             </h5>
             <h1 className="mb-5">{menu.teks1}</h1>
           </div>
@@ -32,10 +32,10 @@ const Menu = () => {
                   href="#tab-1"
                 >
                   <i className="fa fa-coffee fa-2x text-primary" />
-                  <div className="ps-3">
+                  {/* <div className="ps-3">
                     <small className="text-body">{menu.teks2}</small>
                     <h6 className="mt-n1 mb-0">{menu.teks3}</h6>
-                  </div>
+                  </div> */}
                 </a>
               </li>
               <li className="nav-item">
@@ -45,10 +45,10 @@ const Menu = () => {
                   href="#tab-2"
                 >
                   <i className="fa fa-hamburger fa-2x text-primary" />
-                  <div className="ps-3">
+                  {/* <div className="ps-3">
                     <small className="text-body">{menu.teks4}</small>
                     <h6 className="mt-n1 mb-0">{menu.teks5}</h6>
-                  </div>
+                  </div> */}
                 </a>
               </li>
               <li className="nav-item">
@@ -58,10 +58,10 @@ const Menu = () => {
                   href="#tab-3"
                 >
                   <i className="fa fa-utensils fa-2x text-primary" />
-                  <div className="ps-3">
+                  {/* <div className="ps-3">
                     <small className="text-body">{menu.teks6}</small>
                     <h6 className="mt-n1 mb-0">{menu.teks7}</h6>
-                  </div>
+                  </div> */}
                 </a>
               </li>
             </ul>
