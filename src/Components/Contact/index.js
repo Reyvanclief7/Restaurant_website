@@ -1,14 +1,26 @@
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
 import React from "react";
 const Contact = () => {
+    const [contact, setContact] = useState([]);
+    useEffect(() => {
+      const db = getDatabase();
+      const contactRef = ref(db, "contact");
+      onValue(contactRef, (snapshot) => {
+        const data = snapshot.val();
+        setContact(data);
+    });
+    }, []);
   return (
     <body>
       <div id="kontak" className="container-xxl py-5">
         <div className="container">
           <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h5 className="section-title ff-secondary text-center text-primary fw-normal">
-              Contact Us
+              {contact.tit1}
             </h5>
-            <h1 className="mb-5">Contact For Any Query</h1>
+            <h1 className="mb-5">{contact.tit2}</h1>
           </div>
           <div className="row g-4">
             <div className="col-12">
