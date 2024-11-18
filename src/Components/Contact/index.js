@@ -27,29 +27,29 @@ const Contact = () => {
               <div className="row gy-4">
                 <div className="col-md-4">
                   <h5 className="section-title ff-secondary fw-normal text-start text-primary">
-                    Booking
+                    {contact.tit3}
                   </h5>
                   <p>
                     <i className="fa fa-envelope-open text-primary me-2" />
-                    book@example.com
+                    {contact.email}
                   </p>
                 </div>
                 <div className="col-md-4">
                   <h5 className="section-title ff-secondary fw-normal text-start text-primary">
-                    General
+                    {contact.tit4}
                   </h5>
                   <p>
                     <i className="fa fa-envelope-open text-primary me-2" />
-                    info@example.com
+                    {contact.email}
                   </p>
                 </div>
                 <div className="col-md-4">
                   <h5 className="section-title ff-secondary fw-normal text-start text-primary">
-                    Technical
+                    {contact.tit5}
                   </h5>
                   <p>
                     <i className="fa fa-envelope-open text-primary me-2" />
-                    tech@example.com
+                    {contact.email}
                   </p>
                 </div>
               </div>
