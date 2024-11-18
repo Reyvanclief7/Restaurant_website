@@ -54,7 +54,7 @@ const About = () => {
               </h5>
               <h1 className="mb-4">
                 {about.teks1} <i className="fa fa-utensils text-primary me-2" />
-                {about.teks0}
+                {/* {about.teks0} */}
               </h1>
               <p className="mb-4">
                 {about.teks2}
