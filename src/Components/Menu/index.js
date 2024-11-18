@@ -155,7 +155,7 @@ const Menu = () => {
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
                           <span>{menu.menu5}</span>
-                          <span className="text-primary">{menu.teks9}</span>
+                          <span className="text-primary">{menu.harga5}</span>
                         </h5>
                         <small className="fst-italic">
                           {/*isi*/}
@@ -174,7 +174,7 @@ const Menu = () => {
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
                           <span>{menu.menu6}</span>
-                          <span className="text-primary">{menu.teks9}</span>
+                          <span className="text-primary">{menu.Harga6}</span>
                         </h5>
                         <small className="fst-italic">
                           {/*isi*/}
@@ -193,7 +193,7 @@ const Menu = () => {
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
                           <span>{menu.menu7}</span>
-                          <span className="text-primary">{menu.teks9}</span>
+                          <span className="text-primary">{menu.harga7}</span>
                         </h5>
                         <small className="fst-italic">
                           {/*isi*/}
@@ -212,7 +212,7 @@ const Menu = () => {
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
                           <span>{menu.menu8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
+                          <span className="text-primary">{menu.Harga8}</span>
                         </h5>
                         <small className="fst-italic">
                           {/*isi*/}
