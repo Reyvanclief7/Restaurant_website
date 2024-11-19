@@ -27,7 +27,7 @@ const Testimonial = () => {
             <div className="d-flex align-items-center">
               <img
                 className="img-fluid flex-shrink-0 rounded-circle"
-                src="img/testimonial-1.jpg"
+                src={`data:image/jpeg;base64,${testimonial.foto2}`}
                 style={{ width: 50, height: 50 }}
               />
               <div className="ps-3">
@@ -41,7 +41,7 @@ const Testimonial = () => {
             <div className="d-flex align-items-center">
               <img
                 className="img-fluid flex-shrink-0 rounded-circle"
-                src="img/testimonial-2.jpg"
+                src={`data:image/jpeg;base64,${testimonial.foto3}`}
                 style={{ width: 50, height: 50 }}
               />
               <div className="ps-3">
@@ -55,7 +55,7 @@ const Testimonial = () => {
             <div className="d-flex align-items-center">
               <img
                 className="img-fluid flex-shrink-0 rounded-circle"
-                src="img/testimonial-3.jpg"
+                src={`data:image/jpeg;base64,${testimonial.foto4}`}
                 style={{ width: 50, height: 50 }}
               />
               <div className="ps-3">
@@ -69,7 +69,7 @@ const Testimonial = () => {
             <div className="d-flex align-items-center">
               <img
                 className="img-fluid flex-shrink-0 rounded-circle"
-                src="img/testimonial-4.jpg"
+                src={`data:image/jpeg;base64,${testimonial.foto1}`}
                 style={{ width: 50, height: 50 }}
               />
               <div className="ps-3">
