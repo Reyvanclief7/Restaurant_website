@@ -27,7 +27,7 @@ const Team = () => {
                 <img className="img-fluid" src={`data:image/jpeg;base64,${team.foto1}`} alt="1" />
               </div>
               <h5 className="mb-0">{team.org1}</h5>
-              <small>Designation</small>
+              {/* <small>Designation</small> */}
               <div className="d-flex justify-content-center mt-3">
                 <a className="btn btn-square btn-primary mx-1" href>
                   <i className="fab fa-facebook-f" />
@@ -47,7 +47,7 @@ const Team = () => {
                 <img className="img-fluid" src={`data:image/jpeg;base64,${team.foto2}`} alt />
               </div>
               <h5 className="mb-0">{team.org2}</h5>
-              <small>Designation</small>
+              {/* <small>Designation</small> */}
               <div className="d-flex justify-content-center mt-3">
                 <a className="btn btn-square btn-primary mx-1" href>
                   <i className="fab fa-facebook-f" />
@@ -67,7 +67,7 @@ const Team = () => {
                 <img className="img-fluid" src={`data:image/jpeg;base64,${team.foto3}`} alt />
               </div>
               <h5 className="mb-0">{team.org3}</h5>
-              <small>Designation</small>
+              {/* <small>Designation</small> */}
               <div className="d-flex justify-content-center mt-3">
                 <a className="btn btn-square btn-primary mx-1" href>
                   <i className="fab fa-facebook-f" />
@@ -87,7 +87,7 @@ const Team = () => {
                 <img className="img-fluid" src={`data:image/jpeg;base64,${team.foto4}`} alt />
               </div>
               <h5 className="mb-0">{team.org4}</h5>
-              <small>Designation</small>
+              {/* <small>Designation</small> */}
               <div className="d-flex justify-content-center mt-3">
                 <a className="btn btn-square btn-primary mx-1" href>
                   <i className="fab fa-facebook-f" />
