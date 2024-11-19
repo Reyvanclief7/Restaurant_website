@@ -46,8 +46,8 @@ const Menu = () => {
                     <div className="d-flex align-items-center">
                       <img
                         className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-1.jpg"
-                        alt
+                        src={`data:image/jpeg;base64,${menu.image1}`}
+                        alt="menu"
                         style={{ width: 80 }}
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
@@ -65,8 +65,8 @@ const Menu = () => {
                     <div className="d-flex align-items-center">
                       <img
                         className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
-                        alt
+                        src={`data:image/jpeg;base64,${menu.image2}`}
+                        alt="1"
                         style={{ width: 80 }}
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
@@ -82,10 +82,10 @@ const Menu = () => {
                   </div>
                   <div className="col-lg-6">
                     <div className="d-flex align-items-center">
-                      <img
+                      <img 
                         className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-3.jpg"
-                        alt
+                        src={`data:image/jpeg;base64,${menu.image3}`}
+                        alt="2"
                         style={{ width: 80 }}
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
@@ -101,10 +101,10 @@ const Menu = () => {
                   </div>
                   <div className="col-lg-6">
                     <div className="d-flex align-items-center">
-                      <img
+                      <img 
                         className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-4.jpg"
-                        alt
+                        src={`data:image/jpeg;base64,${menu.image4}`}
+                        alt="."
                         style={{ width: 80 }}
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
@@ -122,8 +122,8 @@ const Menu = () => {
                     <div className="d-flex align-items-center">
                       <img
                         className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-5.jpg"
-                        alt
+                        src={`data:image/jpeg;base64,${menu.image5}`}
+                        alt=""
                         style={{ width: 80 }}
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
@@ -141,8 +141,8 @@ const Menu = () => {
                     <div className="d-flex align-items-center">
                       <img
                         className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-6.jpg"
-                        alt
+                        src={`data:image/jpeg;base64,${menu.image6}`}
+                        alt=""
                         style={{ width: 80 }}
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
@@ -160,8 +160,8 @@ const Menu = () => {
                     <div className="d-flex align-items-center">
                       <img
                         className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-7.jpg"
-                        alt
+                        src={`data:image/jpeg;base64,${menu.image7}`}
+                        alt="1"
                         style={{ width: 80 }}
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
@@ -179,326 +179,14 @@ const Menu = () => {
                     <div className="d-flex align-items-center">
                       <img
                         className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-8.jpg"
-                        alt
+                        src={`data:image/jpeg;base64,${menu.image8}`}
+                        alt=""
                         style={{ width: 80 }}
                       />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
                           <span>{menu.menu8}</span>
                           <span className="text-primary">{menu.Harga8}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="tab-2" className="tab-pane fade show p-0">
-                <div className="row g-4">
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-1.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-3.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-4.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-5.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-6.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-7.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-8.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="tab-3" className="tab-pane fade show p-0">
-                <div className="row g-4">
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-1.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-2.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-3.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-4.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-5.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-6.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-7.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
-                        </h5>
-                        <small className="fst-italic">
-                          {/*isi*/}
-                        </small>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center">
-                      <img
-                        className="flex-shrink-0 img-fluid rounded"
-                        src="img/menu-8.jpg"
-                        alt
-                        style={{ width: 80 }}
-                      />
-                      <div className="w-100 d-flex flex-column text-start ps-4">
-                        <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menu.teks8}</span>
-                          <span className="text-primary">{menu.teks9}</span>
                         </h5>
                         <small className="fst-italic">
                           {/*isi*/}
