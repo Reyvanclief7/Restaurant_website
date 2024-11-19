@@ -44,7 +44,7 @@ const Team = () => {
           <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div className="team-item text-center rounded overflow-hidden">
               <div className="rounded-circle overflow-hidden m-4">
-                <img className="img-fluid" src={`data:image/jpeg;base64,${team.foto2}`} alt />
+                <img className="img-fluid" src={`data:image/jpeg;base64,${team.foto2}`} alt="1" />
               </div>
               <h5 className="mb-0">{team.org2}</h5>
               <small>Designation</small>
