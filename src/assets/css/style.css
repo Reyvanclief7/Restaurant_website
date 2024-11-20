@@ -412,6 +412,9 @@
     border-color: var(--primary);
 }
 
+.img-fluid {
+    object-fit: contain;
+}
 
 /*** Footer ***/
 .footer .btn.btn-social {
