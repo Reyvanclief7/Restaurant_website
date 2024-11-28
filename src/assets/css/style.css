@@ -412,6 +412,9 @@
     border-color: var(--primary);
 }
 
+.img-fluid {
+    object-fit: contain;
+}
 
 /*** Footer ***/
 .footer .btn.btn-social {
@@ -475,10 +478,5 @@
 .footer .footer-menu a:last-child {
     margin-right: 0;
     padding-right: 0;
-<<<<<<< HEAD
     border-right: none;
 }
-=======
-    border-right: none;
-}
->>>>>>> 8d2e4dc58ff230c6f30f913efa8005149e2bc53c
